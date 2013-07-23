@@ -3,13 +3,13 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Tom Houdmont -- Web Developer -- @houdmont
 
 # THANKS
 
-    <name>
+    Greg Merriman
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    Normalize.css, jQuery, Modernizr
+    HTML5, CSS3, PHP
+    Normalize.css, jQuery, Modernizr, Twitter Bootstrap, jQuery UI Datepicker
