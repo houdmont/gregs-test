@@ -6,11 +6,18 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>Registration Form</title>
+        <meta name="description" content="A Registration Form example page">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -20,7 +27,6 @@
     <body>
 
         <!-- Add a little help for old browsers -->
-
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,7 +41,7 @@
                 <strong>Warning!</strong> Make sure you've entered a name.
             </div>
 
-            <form id="registration" class="form-horizontal well" action="<?=$_SERVER['PHP_SELF']?>" method="POST">
+            <form id="registration" class="form-horizontal well" action="/result.php" method="POST">
 
                 <div class="control-group">
                     <p>
@@ -46,25 +52,25 @@
                 <div class="control-group">
                     <label class="control-label" for="inputName">Name <span style="color:red;">*</span></label>
                     <div class="controls">
-                        <input type="text" id="inputName" placeholder="Name">
+                        <input type="text" name="inputName" id="inputName" placeholder="Name">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputDate">Date of Birth</label>
                     <div class="controls">
-                        <input type="date" id="inputName" placeholder="Date of Birth">
+                        <input type="date" name="inputDate" id="inputDate" placeholder="Date of Birth">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputEmail">Email</label>
                     <div class="controls">
-                        <input type="email" id="inputEmail" placeholder="Email">
+                        <input type="email" name="inputEmail" id="inputEmail" placeholder="Email">
                     </div>
                 </div>
                 <div class="control-group">
                     <label class="control-label" for="inputPassword">Password</label>
                     <div class="controls">
-                        <input type="password" id="inputPassword" placeholder="Password">
+                        <input type="password" name="inputPassword" id="inputPassword" placeholder="Password">
                     </div>
                 </div>
 
@@ -117,7 +123,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
-        <!-- In Production - these would be concatenated together. -->
+        <!-- In Production - these should be concatenated together. -->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     </body>

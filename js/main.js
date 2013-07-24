@@ -22,22 +22,20 @@ if( ! Modernizr.inputtypes.date) {
     });
 }
 
-
 // Caching variables.
 var $doc = $(document),
     $error = $('#error'),
     $form  = $('#registration');
 
 
+// Delegated event binding.
 $doc.on('submit', $form, function(event) {
 
+    $error.hide();
+
     if( ! $('#inputName').val()) {
-
         $error.show();
-
         event.preventDefault();
         return false;
-    } else {
-        $error.hide();
     }
 });
